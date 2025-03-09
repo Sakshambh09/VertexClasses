@@ -1,22 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-.logo {
-    font-size: 24px;
+/* Header */
+header {
+    background: #ff8c00;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #222;
+}
+
+/* Hero Section */
 .hero {
-    background: linear-gradient(to right, #ffa726, #ff7043);
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #ff8c00, #ff6600);
+    color: white;
+    text-align: left;
+}
+
+.hero img {
+    max-width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.btn-primary {
+    background: #222;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #f9f9f9;
 }
 
 .feature-box {
-    background: #f8f9fa;
-    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
-footer {
-    background: #333;
-    color: white;
+.feature-box:hover {
+    transform: scale(1.05);
 }
+
+.feature-box i {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+/* Pricing */
+.pricing {
+    text-align: center;
+    padding: 50px;
+    background: #eee;
+}
+
+.pricing-plan {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    display: inline-block;
+    width: 45%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    backgroun
