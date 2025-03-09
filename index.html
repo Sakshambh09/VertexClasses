@@ -4,66 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vortex Classes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="bg-light py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="#" class="logo fw-bold text-dark">Vortex Classes</a>
-            <nav>
-                <ul class="list-unstyled d-flex gap-3 m-0">
-                    <li><a href="#" class="text-dark">Home</a></li>
-                    <li><a href="#" class="text-dark">Courses</a></li>
-                    <li><a href="#" class="text-dark">Book Demo</a></li>
-                    <li><a href="#" class="text-dark">About Us</a></li>
-                    <li><a href="#" class="text-dark">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <p>📞 +91-XXXXXXXXXX | Visit our Virtual Space</p>
         </div>
+        <nav>
+            <div class="logo">Vortex Classes</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Book Demo</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero bg-warning text-dark text-center py-5">
-        <div class="container">
-            <h1>Flexible Scheduling: Classes available at your preferred time</h1>
-            <p>Tailored learning, personalized teaching designed for your strengths and weaknesses.</p>
-            <a href="#" class="btn btn-dark">Book Your Free Trial Now</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>📚 Flexible Scheduling: Classes Available Anytime</h1>
+            <p>Tailored learning for every student. Personalized lessons designed for your strengths.</p>
+            <button class="btn-primary" id="bookTrial">Book Your Free Trial</button>
         </div>
+        <img src="hero-image.png" alt="Student Studying">
     </section>
 
     <!-- Features Section -->
-    <section class="container text-center py-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="feature-box p-4 shadow-sm">
-                    <h4>Natural Learning Style</h4>
-                    <p>Methodology adapted to your needs.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box p-4 shadow-sm">
-                    <h4>Dedicated Academic Counselor</h4>
-                    <p>Get expert guidance throughout your journey.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box p-4 shadow-sm">
-                    <h4>Customized Sessions</h4>
-                    <p>As per your individual board/curriculum.</p>
-                </div>
-            </div>
+    <section class="features">
+        <div class="feature-box">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Expert Tutors</h3>
+            <p>Learn from highly skilled educators.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-clock"></i>
+            <h3>Flexible Timings</h3>
+            <p>Schedule sessions at your convenience.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-user-tie"></i>
+            <h3>Personalized Support</h3>
+            <p>Get one-on-one mentorship and guidance.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <h2>🎯 Choose the Right Plan for You</h2>
+        <div class="pricing-plan starter">
+            <h3>Starter Plan</h3>
+            <p>₹625 per session</p>
+            <button class="btn-secondary">Enroll Now</button>
+        </div>
+        <div class="pricing-plan advanced">
+            <h3>Advanced Plan</h3>
+            <p>₹500 per session</p>
+            <button class="btn-secondary">Enroll Now</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Vortex Classes | Designed by TechInnovators</p>
+    <footer>
+        <p>© 2025 Vortex Classes | Designed by TechSolutions</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
